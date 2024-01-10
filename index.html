@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Shopping List</title>
+    <title>ShopMate</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
 
-<nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+<nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-200">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="assets/images/large-logo-removebg.png" class="h-8" alt="My Shopping List Logo">
-        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Shoppy List</span>
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="assets/images/large-logo-removebg.png" class="h-8" alt="ShopMate Logo as a modern shopping cart outline">
+        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">ShopMate</span>
     </a>
     <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+        <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-2 focus:outline-none focus:ring-gray-200">
             <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
             Get Started
             </span>
             </button>
-        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:border-gradient-to-r from-green-400 to-blue-600 focus:outline-none focus:ring-2 focus:border-gradient-to-r from-green-400 to-blue-600 dark:text-gray-200 dark:hover:border-cyan-500 dark:focus:border-cyan-500" aria-controls="navbar-sticky" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -29,9 +30,9 @@
       </button>
     </div>
     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gradient-to-r from-green-400 to-blue-600 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-cyan-500">
         <li>
-          <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+          <a href="#" class="block py-2 px-3 text-white bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-2 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-200 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
         </li>
         <li>
           <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
@@ -51,12 +52,11 @@
     
 <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
 
-<!-- Modal toggle -->
 <!-- Modal toggle with image button -->
 
 <figure class="relative max-w-sm transition-all duration-300 cursor-pointer">
     <a href="#">
-      <img class="rounded-lg" src="assets/images/fruit-and-veg.jpg" alt="Toggle modal" class="cursor-pointer block mx-auto mb-4" data-modal-target="default-modal" data-modal-toggle="default-modal">
+      <img class="rounded-lg" src="assets/images/fruit-and-veg.jpg" alt="Image of fruit and veg" class="cursor-pointer block mx-auto mb-4" data-modal-target="crud-modal" data-modal-toggle="crud-modal">
     </a>
     <figcaption class="absolute px-4 text-lg text-white bottom-6">
         <p>Fruit & Veg</p>
@@ -65,7 +65,7 @@
 
 <figure class="relative max-w-sm transition-all duration-300 cursor-pointer">
     <a href="#">
-      <img class="rounded-lg" src="assets/images/grains.jpg" alt="Toggle modal" class="cursor-pointer block mx-auto mb-4" data-modal-target="default-modal" data-modal-toggle="default-modal">
+      <img class="rounded-lg" src="assets/images/grains.jpg" alt="Image of grains" class="cursor-pointer block mx-auto mb-4" data-modal-target="crud-modal" data-modal-toggle="crud-modal">
     </a>
     <figcaption class="absolute px-4 text-lg text-white bottom-6">
         <p>Grains & Nuts</p>
@@ -74,7 +74,7 @@
 
   <figure class="relative max-w-sm transition-all duration-300 cursor-pointer">
     <a href="#">
-      <img class="rounded-lg" src="assets/images/bread.jpg" alt="Toggle modal" class="cursor-pointer block mx-auto mb-4" data-modal-target="default-modal" data-modal-toggle="default-modal">
+      <img class="rounded-lg" src="assets/images/bread.jpg" alt="Image of bread" class="cursor-pointer block mx-auto mb-4" data-modal-target="crud-modal" data-modal-toggle="crud-modal">
     </a>
     <figcaption class="absolute px-4 text-lg text-white bottom-6">
         <p>Bread</p>
@@ -83,7 +83,7 @@
 
   <figure class="relative max-w-sm transition-all duration-300 cursor-pointer">
     <a href="#">
-      <img class="rounded-lg" src="assets/images/baking.jpg" alt="Toggle modal" class="cursor-pointer block mx-auto mb-4" data-modal-target="default-modal" data-modal-toggle="default-modal">
+      <img class="rounded-lg" src="assets/images/baking.jpg" alt="Image of baking accessories, flour and eggs" class="cursor-pointer block mx-auto mb-4" data-modal-target="crud-modal" data-modal-toggle="crud-modal">
     </a>
     <figcaption class="absolute px-4 text-lg text-white bottom-6">
         <p>Baking</p>
@@ -92,7 +92,7 @@
 
     <figure class="relative max-w-sm transition-all duration-300 cursor-pointer">
     <a href="#">
-      <img class="rounded-lg" src="assets/images/cleaning.jpg" alt="Toggle modal" class="cursor-pointer block mx-auto mb-4" data-modal-target="default-modal" data-modal-toggle="default-modal">
+      <img class="rounded-lg" src="assets/images/cleaning.jpg" alt="Cleaning product image" class="cursor-pointer block mx-auto mb-4" data-modal-target="crud-modal" data-modal-toggle="crud-modal">
     </a>
     <figcaption class="absolute px-4 text-lg text-white bottom-6">
         <p>Cleaning</p>
@@ -101,7 +101,7 @@
 
     <figure class="relative max-w-sm transition-all duration-300 cursor-pointer">
     <a href="#">
-      <img class="rounded-lg" src="assets/images/dairy.jpg" alt="Toggle modal" class="cursor-pointer block mx-auto mb-4" data-modal-target="default-modal" data-modal-toggle="default-modal">
+      <img class="rounded-lg" src="assets/images/dairy.jpg" alt="Image of milk" class="cursor-pointer block mx-auto mb-4" data-modal-target="crud-modal" data-modal-toggle="crud-modal">
     </a>
     <figcaption class="absolute px-4 text-lg text-white bottom-6">
         <p>Dairy</p>
@@ -110,7 +110,7 @@
 
     <figure class="relative max-w-sm transition-all duration-300 cursor-pointer">
     <a href="#">
-      <img class="rounded-lg" src="assets/images/meat.jpg" alt="Toggle modal" class="cursor-pointer block mx-auto mb-4" data-modal-target="default-modal" data-modal-toggle="default-modal">
+      <img class="rounded-lg" src="assets/images/meat.jpg" alt="Image of a grilled steak on plate" class="cursor-pointer block mx-auto mb-4" data-modal-target="crud-modal" data-modal-toggle="crud-modal">
     </a>
     <figcaption class="absolute px-4 text-lg text-white bottom-6">
         <p>Meat</p>
@@ -119,7 +119,7 @@
 
     <figure class="relative max-w-sm transition-all duration-300 cursor-pointer">
     <a href="#">
-      <img class="rounded-lg" src="assets/images/misc.jpg" alt="Toggle modal" class="cursor-pointer block mx-auto mb-4" data-modal-target="default-modal" data-modal-toggle="default-modal">
+      <img class="rounded-lg" src="assets/images/misc.jpg" alt="Image of misc products" class="cursor-pointer block mx-auto mb-4" data-modal-target="crud-modal" data-modal-toggle="crud-modal">
     </a>
     <figcaption class="absolute px-4 text-lg text-white bottom-6">
         <p>Misc</p>
@@ -128,7 +128,7 @@
 
     <figure class="relative max-w-sm transition-all duration-300 cursor-pointer">
     <a href="#">
-      <img class="rounded-lg" src="assets/images/sea-food.jpg" alt="Toggle modal" class="cursor-pointer block mx-auto mb-4" data-modal-target="default-modal" data-modal-toggle="default-modal">
+      <img class="rounded-lg" src="assets/images/sea-food.jpg" alt="Plate of sea food" class="cursor-pointer block mx-auto mb-4" data-modal-target="crud-modal" data-modal-toggle="crud-modal">
     </a>
     <figcaption class="absolute px-4 text-lg text-white bottom-6">
         <p>Sea Food</p>
@@ -137,7 +137,7 @@
 
     <figure class="relative max-w-sm transition-all duration-300 cursor-pointer">
     <a href="#">
-      <img class="rounded-lg" src="assets/images/treats.jpg" alt="Toggle modal" class="cursor-pointer block mx-auto mb-4" data-modal-target="default-modal" data-modal-toggle="default-modal">
+      <img class="rounded-lg" src="assets/images/treats.jpg" alt="Stacked up donuts" class="cursor-pointer block mx-auto mb-4" data-modal-target="crud-modal" data-modal-toggle="crud-modal">
     </a>
     <figcaption class="absolute px-4 text-lg text-white bottom-6">
         <p>Treats</p>
@@ -146,32 +146,51 @@
 
     <figure class="relative max-w-sm transition-all duration-300 cursor-pointer">
     <a href="#">
-      <img class="rounded-lg" src="assets/images/personal-hygiene.jpg" alt="Toggle modal" class="cursor-pointer block mx-auto mb-4" data-modal-target="default-modal" data-modal-toggle="default-modal">
+      <img class="rounded-lg" src="assets/images/personal-hygiene.jpg" alt="Personal hygiene products" class="cursor-pointer block mx-auto mb-4" data-modal-target="crud-modal" data-modal-toggle="crud-modal">
     </a>
     <figcaption class="absolute px-4 text-lg text-white bottom-6">
         <p>Personal Hygiene</p>
     </figcaption>
   </figure>
+
   <figure class="relative max-w-sm transition-all duration-300 cursor-pointer">
     <a href="#">
-      <img class="rounded-lg" src="assets/images/special-occasion.jpg" alt="Toggle modal" class="cursor-pointer block mx-auto mb-4" data-modal-target="default-modal" data-modal-toggle="default-modal">
+      <img class="rounded-lg" src="assets/images/pasta.jpg" alt="Image of pasta dish on a black plate" class="cursor-pointer block mx-auto mb-4" data-modal-target="crud-modal" data-modal-toggle="crud-modal">
     </a>
     <figcaption class="absolute px-4 text-lg text-white bottom-6">
-        <p>Special Occasion</p>
+        <p>Pasta</p>
     </figcaption>
   </figure>
 
-    <!-- Main modal -->
-  <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-    <div class="relative p-4 w-full max-w-2xl max-h-full">
+  <figure class="relative max-w-sm transition-all duration-300 cursor-pointer">
+    <a href="#">
+      <img class="rounded-lg" src="assets/images/drinks.jpg" alt="Colourful cocktails" class="cursor-pointer block mx-auto mb-4" data-modal-target="crud-modal" data-modal-toggle="crud-modal">
+    </a>
+    <figcaption class="absolute px-4 text-lg text-white bottom-6">
+        <p>Beverages</p>
+    </figcaption>
+  </figure>
+
+  <figure class="relative max-w-sm transition-all duration-300 cursor-pointer">
+    <a href="#">
+      <img class="rounded-lg" src="assets/images/ice-cubes.jpg" alt="Image of ice cubes" class="cursor-pointer block mx-auto mb-4" data-modal-target="crud-modal" data-modal-toggle="crud-modal">
+    </a>
+    <figcaption class="absolute px-4 text-lg text-white bottom-6">
+        <p>Frozen</p>
+    </figcaption>
+  </figure>
+
+<!-- Main modal -->
+<div id="crud-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-md max-h-full">
         <!-- Modal content -->
         <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
             <!-- Modal header -->
             <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
                     Shopping List
                 </h3>
-                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="crud-modal">
                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
                     </svg>
@@ -179,41 +198,53 @@
                 </button>
             </div>
             <!-- Modal body -->
-            <div class="p-4 md:p-5 space-y-4">
-                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
-                </p>
-                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
-                </p>
-            </div>
+            <form class="p-4 md:p-5">
+                <div class="grid gap-4 mb-4 grid-cols-2">
+                    <div class="col-span-2">
+                        <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type your item here" required="">
+                    </div>
+                    <div class="col-span-2 sm:col-span-1">
+                        <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Price</label>
+                        <input type="number" name="price" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Enter price">
+                    </div>
+                    <div class="col-span-2 sm:col-span-1">
+                      <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Quantity</label>
+                      <input type="number" name="price" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="1, 2, 3..." required="">
+                  </div>
+                </div>
+                <button type="submit" class="text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    <svg class="me-1 -ms-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+                    Add item
+                </button>
+            </form>
         </div>
     </div>
-</div>
+</div> 
+
 </div>
 <div class="flex items-center justify-center py-4 md:py-8 flex-wrap">
-    <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+    <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white">
         <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
         Active
         </span>
         </button>
-        <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+        <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white">
         <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
         Completed
         </span>
         </button>
-        <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+        <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white">
         <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
         Notifications
         </span>
         </button>
 </div>
 
-<footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+<footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-900">
     <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#" class="hover:underline">VB</a>. All Rights Reserved.
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-200">© 2024 <a href="#" class="hover:underline">VB</a>. All Rights Reserved.
     </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-200 sm:mt-0">
         <li>
             <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
         </li>
